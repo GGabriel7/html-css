@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+
+    <style>
+        h1 {
+            background-color: lightgray;
+            height: 200px;
+            width: 300px;
+            /* Mexe na box */
+
+            /* border-style: solid;
+            border-width: 5px;
+            border-color: #4b4b4b; */
+            border: 5px solid #4b4b4b;
+            /* Mexe na borda */
+
+            /* padding-top: 20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            padding-right: 20px; */
+            padding: 20px;
+            /* Pode-se usar assim: 'padding: 10px 20px 30px 40px;'' para quando todos os lados forem diferentes
+            e assim: 'padding: 20px 10px;'' sendo o primeiro para top e bottom e o segundo para left e right. */
+            /* Mexe no espaço entre a borda e a box */
+
+            /* margin-top: 50px;
+            margin-left: 50px;
+            margin-bottom: 50px;
+            margin-right: 50px; */
+            /* mesma regra do padding */
+            margin: 50px;
+            /* margin: auto; deixa centralizado */
+        }
+
+        a {
+            border-width: 20px;
+            border-style: groove;
+            border-color: blueviolet;
+
+            padding-top: 1px;
+            padding-left: 20px;
+            padding-bottom: 1px;
+            padding-right: 20px;
+
+            /* outline: 5px;
+            outline-style: dotted;
+            outline-color: burlywood; */
+            outline: 5px dotted blueviolet;
+            /* linha entre a borda e a margem */
+
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa BOX-LEVEL</h1>
+    <p>Parágrafos também são BOX-LEVEL, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como funciona</p>
+</body>
+</html>

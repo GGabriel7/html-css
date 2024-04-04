@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código Fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em JavaScript</p> <!--'code' serve para mudar a formatação da escrita-->
+        <pre>
+    <cod>
+    def soma(a=0, b=0):
+        return a+b
+    
+    n1 = int(input('Primeiro número: '))
+    n2 = int(input('Segundo número: '))
+    som = soma(n1, n2)
+    print(som)
+    </cod>
+        </pre><!--'pre' serve para deixar a escrita no site como é posta no programa-->
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p><!--A tag 'q' serve para colocar uma citação entre aspas.-->
+    <h2>Citações Completas</h2>
+    <p>Segundo Maurício Samy Silva, no livro Fundamentos de HTML5 e CSS3:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/ZyJyDwAAQBAJ?hl=pt-BR&gbpv=0"> <!--'cite' serve para interligar um link em algo no seu site, não irá mudar nada gráfico. Basicamente para o navegador saber que estão ligadas. -->
+        Hipertexto é todo texto escrito em um documneto para web e que tem como principal caráctersstica a possibiidade de se interligar a outros documentos da web com uso dos nossos já conhecidos links, presentes nas páginas dos sites que estamos acostumados a visitatar.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+    <h2>Texto Invertido</h2>
+    <bdo dir="rtl">Texto invertido</bdo>
+</body>
+</html>

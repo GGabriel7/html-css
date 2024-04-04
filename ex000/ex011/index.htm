@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Imagem abaixo irá mudar conforme o tamanho da tela.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequeno.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/medio.png" type="image/png">
+        <img src="imagens/grande.png" alt="imagem variavel">
+    </picture>
+    
+    <h1>Reproduzir Áudio</h1>
+    <p>Reproduzindo áudios em HTML</p>
+    <audio preload="metadata" autoplay controls loop><!--tag para rodar audio. 'preload', por padrão é em 'auto', colocar em 'metadada' serve para o audio ser carregado só quando for clicado. 'autoplay' é para inciar automáticamente. 'controls' é para exibir os controles de audio e 'loop' serve para a musica ficar reiniciando quando acabar-->
+        <source src="midia/camptown-races.mp3" type="audio/mpeg"><!--Esse é o áudio que será reproduzido. SEMPRE é seguindo a ordem do mais em cima para o mais embaixo-->
+
+        <!--Os áudios abaixo seriam para, caso o navegador não suportasse mp3, tivesse disponibilidade com outros arquivos de áudio.-->
+        <source src="midia/camptown-races.ogg" type="audio/ogg">
+        <source src="midia/camptown-races.wav" type="audio/wav">
+        <p>Áudio não carregado. <a href="midia/camptown-races.mp3">Clique aqui para baixar o arquivo mp3</a>.</p>
+        <!--mp3, ogg e wav são os arquivos de audio mais conhecidos. Sempre é bom colocar uma opção de download caso o navegar do cliente não consiga carregar o áudio-->
+    </audio>
+</body>
+</html>

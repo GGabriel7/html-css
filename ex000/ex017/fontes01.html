@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+
+    <style>
+        body {
+            /*Fontes são sempre extremamente importantes na construção do site. Tipos de fontes:display:
+            -serif(serifadas) - ex.: Times, Times new roman
+            -sans-serif (não serifadas) - ex.: Arial, Helvetica
+            -monoespaçadas - todas os caracteres tem o mesmo tamanho.
+            -script / handwriting - simula escrita a mão
+            -Display - Fogem do padrão (banners, games, filmes...)
+            */
+            font-family: Arial, Helvetica, sans-serif;
+
+            /*Tipos de medidas para tamanho:
+            Absolutas: cm, mm, in, px, pt, pc
+            Relativas: em, ex, rem, vw, vh, %
+            
+            Recomendadas para uso: px e em
+            geralmente 16px é igual a 1em(tamanho padrão da tela)*/
+            font-size: 1em;
+        }
+
+        h1 {
+            /* shorthand font
+            O código abaixo é uma maneira mais simplicado de escrever os codigos a seguir.
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder; (largura da fonte)
+            font-size: 3em;
+            font-style: italic;
+            Sempre ficará assim: 
+            font-style -> font-weight -> font-size -> ont-family*/
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus fuga assumenda dolorum labore quidem optio, provident commodi ipsam quisquam odio praesentium, ex reprehenderit, nihil cupiditate at molestias officia laudantium cumque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quaerat itaque, laudantium aliquam natus atque ducimus quia, est fugit velit labore unde ex eum qui beatae nihil quas a nobis.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci labore natus aut odio delectus impedit laborum aspernatur non sint officia ullam minus dolore, neque, quae blanditiis. Laudantium asperiores omnis delectus.</p>
+    <h2>Subtitulo de exemplo</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam in doloremque velit alias, nihil perferendis itaque facere rem esse nesciunt fugit facilis explicabo cumque consectetur porro illo odit voluptatum vero?</p>
+</body>
+</html>

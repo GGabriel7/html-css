@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+body {
+    background-image: linear-gradient(180deg, #aedafd, #aedafdb4, #aedafd8e);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: #231d5c;
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+}
+
+/*
+id="" - # - 1 elementos
+class="" - . - varios elementos
+*/
+
+/*
+Pode usar class com outras class
+id com id
+e class com id
+SÓ TOMA CUIDADO PARA UM NÃO SOBREPOR A OUTRA DE MANEIRA QUE NÃO DE PARA IDENTIFICAR ALGUMA
+*/
+
+#principal {
+    background-color: #231d5c;
+
+    height: 120px;
+    width: 500px;
+
+    border-radius: 5px;
+
+    color: #ffffff;
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+    text-align: center;
+
+    margin: auto;
+}
+
+h2 {
+    color: #5e5992;
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+}
+
+.bas {
+    color: #817bbd;
+}
+
+.int {
+    color: #5e5992;
+}
+
+.ava {
+    color: #2c2953;
+}
+
+p {
+    font-weight: 400;
+    text-indent: 40px;
+}
+
+.destaque {
+    color: #ff1313;
+}
+
+.marcador {
+    background-color: #3a5d7a3f;
+}

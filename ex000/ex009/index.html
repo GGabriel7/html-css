@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="a" start="2">
+    <!--'ol' é a TAG para LISTAS ORDENADAS/
+    'start' serve para dar inicio na lista/
+    'type' serve para escolher o tipo da ordem-->
+        <li>Acordar</li><!--'li' é a TAG identificar os itensr-->
+        <li>Tomar banho</li>
+        <li>Arrumar-me</li>
+        <li>Café da manhã</li>
+        <li>Trabalhar</li>
+    </ol>
+
+    <h2>Listas não ordenadas</h2>
+    <ul type="circle">
+        <!--'ul' é a TAG para listar NÃO ORDENADAS
+        'type': disc(padrão), circle e square-->
+        <li>Pão</li>
+        <li>Queijo</li>
+        <li>Tomate</li>
+        <li>Carne</li>
+        <li>Alface</li>
+    </ul>
+
+    <h2>Juntando Listas</h2>
+    <ul>
+        <li>Linguagens Favoritas</li>
+        <ol>
+            <li>Antigas:</li>
+            <ol type="i">
+                <li>Fortran</li>
+                <li>C</li>
+                <li>Assembly</li>
+            </ol>
+            <li>Novas:</li>
+            <ol type="i", start="4">
+                <li>Python</li>
+                <li>PHP</li>
+                <li>JavaScipt</li>
+            </ol>
+        </ol>
+        <li>Meus Jogos Favoritos</li>
+        <ol>
+            <li>PS2:</li>
+            <ol type="i">
+                <li>GTA SA</li>
+                <li>Pomba Patch</li>
+                <li>God of War</li>
+                <ul>
+                    <li>God of War</li>
+                    <li>God of War 2</li>
+                </ul>
+                <li>Black</li>
+            </ol>
+            <li>XBOX ONE:</li>
+            <ol type="i">
+                <li>Fortnite</li>
+                <li>GTA V</li>
+                <li>FIFA</li>
+                <ul>
+                    <li>FIFA 22</li>
+                    <li>FIFA 23</li>
+                </ul>
+                <li>Metal Gear Solid 4</li>
+            </ol>
+            <li>PC:</li>
+            <ol type="i">
+                <li>Team Fortress 2</li>
+                <li>CS 1.6</li>
+                <li>Minecraft</li>
+                <li>Guitar Flash</li>
+            </ol>
+        </ol>
+    </ul>
+    <h2>Lista de Definições</h2>
+    <dl><!--'dl é para criar uma lista com definições. termo e sua determinada definição'-->
+        <dt>HTML</dt><!--'dt' é para o termo-->
+        <dd>Linguagem de marcação para a criação do conteúdo de um site</dd><!--'dd' é para a definição-->
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a crianção do design de um site</dd>
+        <dd>JavaScipt</dd>
+        <dd>Linguagem de programação para a criação de interatividade de um site</dd>
+    </dl>
+</body>
+</html>
