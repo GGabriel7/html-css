@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de HOVER</title>
+
+    <style>
+        div > #escondido {
+            display: none;
+        }
+
+        div:hover > #escondido{
+            display: block;
+            color: white;
+            background-color: red;
+            width: 150px;
+            text-align: center;
+        }
+
+        div:hover {
+            color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo de HOVER</h1>
+    <div>
+        Passe o mouse por cima desse texto
+        <p id="escondido">Texto escondido</p>
+    </div>
+</body>
+</html>

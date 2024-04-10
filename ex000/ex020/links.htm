@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;    
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:visited{ /*colocar uma determinada cor em um link já visitado*/ 
+            color: blueviolet;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: black;
+        }
+
+        .especial {
+            font-weight: bold;
+        }
+
+        /* :: são para pseudo-elements, para adicionar algo no conteudo do documento */
+        .especial::before { /* esse serve para adiionar algo antes  */
+            content: '-> ';
+        }
+
+        .especial::after { /*E esse para algo depois--> */
+            content: ' <-';
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li>
+            <a href="https://youtube.com" target="_blank">Youtube</a>
+        </li>
+        <li>
+            <a href="https://instagram.com" target="_blank" class="especial">Instagram</a>
+        </li>
+        <li>
+            <a href="https://facebook.com" target="_blank" class="especial">Facebook</a>
+        </li>
+    </ul>
+</body>
+</html>
