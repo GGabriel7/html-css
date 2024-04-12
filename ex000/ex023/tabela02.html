@@ -12,8 +12,15 @@
         }
 
         table {
-            width: 400px;
+            width: 450px;
             border-collapse: collapse;
+        }
+
+        caption {
+            background: gainsboro;
+            padding: 15px;
+            font-size: 1.4em;
+            font-weight: bold;
         }
 
         thead, tfoot {
@@ -39,8 +46,9 @@
     <h1>Uso de Tabaleas Grandes</h1>
     <!-- ANATOMIA: 
             TABLE 
+                CAPTION (titulo da tabela)
                 THEAD
-                    TR(LINHA), TD(DADO), TH("itulo")
+                    TR(LINHA), TD(DADO), TH("Titulo de um dado")
 
                 TBODY
                     TR, TD, TH
@@ -49,10 +57,13 @@
                     TR, TD, TH -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+
+                <!-- scope - para identificar onde fica os dados dos devidos titulos. COL - Coluna (para baixo) / ROW - Linha (para o lado) -->
             </tr>
         </thead>
 
@@ -195,7 +206,7 @@
 
         <tfoot>
             <tr>
-                <th>Total</th>
+                <th scope="row">Total</th>
                 <td class="num"><strong>203.062.512</strong></td>
             </tr>
         </tfoot>
