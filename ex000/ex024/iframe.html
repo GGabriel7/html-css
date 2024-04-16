@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Utilizando iframe</title>
+
 </head>
 <body>
     <h1>Testando uso de iframes</h1>
 
+    <!-- tamanhos padrão de iframe WIDTH - 300 / HEIGHT - 150 -->
+    <!-- frameborder pode ser 0 (sem borda) 1+ (com borda) -->
     <p>Acessando o CursoemVideo 
-        <iframe src="https://www.cursoemvideo.com/" frameborder="0"></iframe>
+        <iframe src="https://www.cursoemvideo.com/" frameborder="0" scolling="auto"> <!-- scolling - rolagem da pagina - auto(padrão) - aparece barra de rolagem caso tenha conteudo para baixo / yes - sempre aparece a barra / no - não aparece a barra (não funciona em varios navegadores) --> </iframe>
     com o igrame</p>
-
+    
     <p>Alguns sites não são disponiveis 
         <iframe src="https://www.google.com/" frameborder="1"></iframe>
     Como o do goole</p>
 
-    <p><iframe src="https://www.bible.com/pt" frameborder="1" height="400px"></iframe></p>
+    <iframe src="https://www.bible.com/pt" frameborder="1" height="400px">
+        <a href="https://www.bible.com/pt">bible project</a>
+        <!-- iframes não são compativeis em todos os casos. colocar uma mesnagem dentro da tag, faz ela aparecer em navegadores não compativeis -->
+    </iframe>
     
-    <iframe src="https://embed.waze.com/iframe?zoom=17&lat=-3.737087&lon=-38.475698&ct=livemap" width="100%" height="350px" allowfullscreen></iframe>
+    <iframe src="https://embed.waze.com/iframe?zoom=17&lat=-3.737087&lon=-38.475698&ct=livemap" width="400" height="350px" allowfullscreen></iframe>
 </body>
 </html>
