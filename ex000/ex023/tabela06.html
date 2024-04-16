@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #conteiner {
+            overflow-x: auto;
+            margin: 5px;
+        }
+
+        table {
+            margin: auto;
+            width: 100%;
+            max-width: 650px;
+            min-width: 432px;
+            border-collapse: collapse;
+            background-color: black;
+            color: white;
+        }
+
+        caption {
+            color: black;
+            font-weight: bold;
+            font-size: 1.5em;
+            margin: 5px;
+        }
+
+        td, th {
+            border: 1px solid white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        td > p {
+            margin-top: 4px;
+        }
+
+        td:hover {
+            background-color: #979797;
+        }
+
+        .destaque {
+            font-size: 0.8em;
+            font-weight: bold;
+            
+            background-color: white;
+            color: black;
+
+            box-shadow: inset 0 0 5px black;
+
+            text-shadow: 0 0 2px rgba(0, 0, 0, 0.521);
+        }
+
+        .destaque:hover {
+            background-color: rgb(0, 0, 131);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <table>
+            <caption>Calendário de Maio</caption>
+            <tr>
+                <th scope="col">DOM</th>
+                <th scope="col">SEG</th>
+                <th scope="col">TER</th>
+                <th scope="col">QUA</th>
+                <th scope="col">QUI</th>
+                <th scope="col">SEX</th>
+                <th scope="col">SAB</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td class="destaque">4<p>Louvorzão</p></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td class="destaque">7<p>Vigília</p></td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td class="destaque">19 <p>Culto de Missões</p></td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
