@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    <form action="cadastro.php" method="POST">
+        <!-- autocomplete="off" desabilita a sugestão automatica -->
+        <!-- method="POST" - Deixa os dados não viseis na URL (AINDA É POSSIVEL VERIFICAR PELO ISPENCIONAR) 
+        method="get" - Aparece na URL (recomendavel até 3000 letras) 
+        Para não ver os dados, HTTPS-->
+        <p><label for="iname">Nome</label>
+        <input type="text" name="name" id="iname"></p>
+
+        <p><label for="inum">Número</label>
+            <input type="number" name="num" id="inum"></p>
+
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
