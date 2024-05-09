@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        legend {
+            padding: 0 12px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoasis</legend>
+
+            <p>
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="email" id="iemal" required autocomplete="email" placeholder="exemplo@email.com">
+            </p>
+
+            <p>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" required autocomplete="tel" placeholder="(00)12345-6789" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
