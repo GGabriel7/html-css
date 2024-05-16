@@ -1,45 +1,76 @@
 @charset "UTF-8";
 
-/* Versão Mobile First */
+/* Todas as demais midias */
 
-* {
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+/* 
+TYPICAL DEVICE BREAKPOINTS
+---------------------------
+pequenas telas < 600px
+600px < CELULAR < 768px
+768px < TABLET < 992px
+992px < Computadores < 1200px
+Grandes telas > 1200px
+*/
+
+/* Para IMPReSSÃO */
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../../imagens/back-print.jpg);
+        /* Desnecessário (Não sai backgroud em print) */
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+    
+    main::after {
+        content: 'Impressão feita por site www.xxxxxxxxx.com.br';
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+    
+    img#print { display: block; }
+    #cel, #tab, #pc, #tv { display: none; }
 }
 
-html {
-    height: 100vh;
-    width: 100vw;
+/* Para TABLET */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../../imagens/back-tablet.jpg);
+    }
+    
+    img#tab { display: block; }
+    img#cel, img#print, img#pc, img#tv { display: none; }
 }
 
-body {
-    background: black url(../../imagens/back-phone.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
+/* Para PC */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../../imagens/back-pc.jpg);
+    }
+    
+    img#pc { display: block; }
+    img#cel, img#print, img#tab, img#tv { display: none; }
 }
 
-main {
-    background-color: rgba(255, 255, 255, 0.658);
-    max-width: 400px;
-    margin: auto;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 10px;
-}
+/* Para TELAS GRANDES (TV e entre outras) */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../../imagens/back-tv.jpg);
+    }
 
-h1 {
-    text-align: center;
-    color: white;
-    font-size: 1.7em;
-    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.801);
-}
+    main {
+        width: 700px;
+    }    
 
-img {
-    display: block;
-    margin: auto;
+    img#tv { display: block; }
+    img#cel, img#print, img#tab, img#pc { display: none; }
 }
-
-img#cel { display: block; }
-img#tab, #print, #pc, #tv { display: none; }
